@@ -1,0 +1,59 @@
+@import '../App/_vars';
+    
+.todo-menu
+    position: fixed
+    top: 0
+    left: 50%
+    transform: translate(-50%)
+    min-height: 100vh
+    height: 100%
+    width: 100%
+    background: #16192a
+    width: $mobile-preview
+
+    &__wrapper 
+        width: 100%
+        height: 100vh
+
+    &__dialog
+        padding: $app-padding
+
+    &__input-text
+        display: block
+        outline: none
+        resize: none
+        border: none
+        background: #1f243a
+        padding: 25px
+        font-family: inherit
+        font-size: 20px
+        width: 100%
+        min-height: 10vh
+        height: 190px
+        border-radius: 5px
+        color: #657192
+
+        &::placeholder
+            color: #657192
+
+    &__field-title
+        margin-top: 15px
+
+    &__radio-items
+        margin: 14px 0
+
+    &__btn
+        width: 100%
+        font-size: 20px
+        padding: 1.2rem 0
+
+    &__close 
+        cursor: pointer
+        margin-bottom: 23px
+
+    &__radio + &__radio 
+        margin-left: 15px
+
+    &__radio-items
+        display: flex
+

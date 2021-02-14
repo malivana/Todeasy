@@ -1,0 +1,33 @@
+@import '../App/_vars';
+
+.nav
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: $margin-bottom
+    
+    &__title 
+        font-size: 40px
+
+    &__progress 
+        width: 60px
+        height: 60px
+        position: relative
+
+        circle
+            fill: none
+            stroke-width: 3
+        
+        &-track 
+            stroke: #24283F
+
+        &-line
+            // stroke: #fff
+            stroke-dasharray: 160
+            transition: all .5s ease-in-out;
+
+        &-percent 
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
